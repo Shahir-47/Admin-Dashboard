@@ -8,6 +8,7 @@
     <link rel="icon" href="./img/icon.svg" type="image/png">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -66,15 +67,17 @@
         <div class="main">
             <!-- Header -->
             <div class="header">
-                <div class="header-1">
-                    <div class="search">
-                        <img src="./img/search.svg" alt="Search icon">
-                        <input type="text">
-                    </div>
-                    <div class="user">
-                        <img src="./img/bell.svg" alt="Notification icon">
-                        <img src="./img/user.svg" alt="User icon">
-                        <p>Shahir Ahmed</p>
+                <div class="sticky-container">
+                    <div class="header-1">
+                        <div class="search">
+                            <img src="./img/search.svg" alt="Search icon">
+                            <input type="text">
+                        </div>
+                        <div class="user">
+                            <img src="./img/bell.svg" alt="Notification icon">
+                            <img src="./img/user.svg" alt="User icon">
+                            <p>Shahir Ahmed</p>
+                        </div>
                     </div>
                 </div>
                 <div class="header-2">
@@ -99,97 +102,100 @@
 
                 <!--Projects-->
                 <div class="projects">
+                    <p>Your Projects</p>
+                    <div class="all-cards">
 
-                    <button class="card card-1">
-                        <div class="color-pane"></div>
-                        <div class="card-cont card-1-content">
-                            <div class="card-wrtiting card-1-writing">
-                                <h3>Calculator</h3>
-                                <p>This is a simple calculator application with keyboard support. It allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                    
+                        <button class="card card-1">
+                            <div class="color-pane"></div>
+                            <div class="card-cont card-1-content">
+                                <div class="card-wrtiting card-1-writing">
+                                    <h3>Calculator</h3>
+                                    <p>This is a simple calculator application with keyboard support. It allows you to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.</p>
+                                </div>
+                                <div class="card-footer card-1-footer">
+                                    <img src="./img/star.svg" alt="Star icon">
+                                    <img src="./img/eye.svg" alt="Watch icon">
+                                    <img src="./img/fork.svg" alt="Fork icon">
+                                </div>
                             </div>
-                            <div class="card-footer card-1-footer">
-                                <img src="./img/star.svg" alt="Star icon">
-                                <img src="./img/eye.svg" alt="Watch icon">
-                                <img src="./img/fork.svg" alt="Fork icon">
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button class="card card-2">
-                        <div class="color-pane"></div>
-                        <div class="card-cont card-2-content">
-                            <div class="card-wrtiting card-2-writing">
-                                <h3>Etch a SKetch</h3>
-                                <p>A simple Etch-a-Sketch application built with HTML, CSS, and JavaScript.</p>
+                        <button class="card card-2">
+                            <div class="color-pane"></div>
+                            <div class="card-cont card-2-content">
+                                <div class="card-wrtiting card-2-writing">
+                                    <h3>Etch a SKetch</h3>
+                                    <p>A simple Etch-a-Sketch application built with HTML, CSS, and JavaScript.</p>
+                                </div>
+                                <div class="card-footer card-2-footer">
+                                    <img src="./img/star.svg" alt="Star icon">
+                                    <img src="./img/eye.svg" alt="Watch icon">
+                                    <img src="./img/fork.svg" alt="Fork icon">
+                                </div>
                             </div>
-                            <div class="card-footer card-2-footer">
-                                <img src="./img/star.svg" alt="Star icon">
-                                <img src="./img/eye.svg" alt="Watch icon">
-                                <img src="./img/fork.svg" alt="Fork icon">
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button class="card card-3">
-                        <div class="color-pane"></div>
-                        <div class="card-cont card-3-content">
-                            <div class="card-wrtiting card-3-writing">
-                                <h3>Rock Paper Scissors</h3>
-                                <p>Play Rock Paper Scissors online! Simple game built with HTML, CSS, and JavaScript. Play against the computer and aim for victory!</p>
+                        <button class="card card-3">
+                            <div class="color-pane"></div>
+                            <div class="card-cont card-3-content">
+                                <div class="card-wrtiting card-3-writing">
+                                    <h3>Rock Paper Scissors</h3>
+                                    <p>Play Rock Paper Scissors online! Simple game built with HTML, CSS, and JavaScript. Play against the computer and aim for victory!</p>
+                                </div>
+                                <div class="card-footer card-3-footer">
+                                    <img src="./img/star.svg" alt="Star icon">
+                                    <img src="./img/eye.svg" alt="Watch icon">
+                                    <img src="./img/fork.svg" alt="Fork icon">
+                                </div>
                             </div>
-                            <div class="card-footer card-3-footer">
-                                <img src="./img/star.svg" alt="Star icon">
-                                <img src="./img/eye.svg" alt="Watch icon">
-                                <img src="./img/fork.svg" alt="Fork icon">
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button class="card card-4">
-                        <div class="color-pane"></div>
-                        <div class="card-cont card-4-content">
-                            <div class="card-wrtiting card-4-writing">
-                                <h3>Sign Up Form</h3>
-                                <p>This is a simple sign-up form implemented using HTML, CSS, and JavaScript. The form allows users to enter their personal information and create an account.</p>
+                        <button class="card card-4">
+                            <div class="color-pane"></div>
+                            <div class="card-cont card-4-content">
+                                <div class="card-wrtiting card-4-writing">
+                                    <h3>Sign Up Form</h3>
+                                    <p>This is a simple sign-up form implemented using HTML, CSS, and JavaScript. The form allows users to enter their personal information and create an account.</p>
+                                </div>
+                                <div class="card-footer card-4-footer">
+                                    <img src="./img/star.svg" alt="Star icon">
+                                    <img src="./img/eye.svg" alt="Watch icon">
+                                    <img src="./img/fork.svg" alt="Fork icon">
+                                </div>
                             </div>
-                            <div class="card-footer card-4-footer">
-                                <img src="./img/star.svg" alt="Star icon">
-                                <img src="./img/eye.svg" alt="Watch icon">
-                                <img src="./img/fork.svg" alt="Fork icon">
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button class="card card-5">
-                        <div class="color-pane"></div>
-                        <div class="card-cont card-5-content">
-                            <div class="card-wrtiting card-5-writing">
-                                <h3>RDR2 Landing Page</h3>
-                                <p>Welcome to the Red Dead Redemption 2 Fan Page, an immersive website dedicated to the captivating world of Red Dead Redemption 2.</p>
+                        <button class="card card-5">
+                            <div class="color-pane"></div>
+                            <div class="card-cont card-5-content">
+                                <div class="card-wrtiting card-5-writing">
+                                    <h3>RDR2 Landing Page</h3>
+                                    <p>Welcome to the Red Dead Redemption 2 Fan Page, an immersive website dedicated to the captivating world of Red Dead Redemption 2.</p>
+                                </div>
+                                <div class="card-footer card-5-footer">
+                                    <img src="./img/star.svg" alt="Star icon">
+                                    <img src="./img/eye.svg" alt="Watch icon">
+                                    <img src="./img/fork.svg" alt="Fork icon">
+                                </div>
                             </div>
-                            <div class="card-footer card-5-footer">
-                                <img src="./img/star.svg" alt="Star icon">
-                                <img src="./img/eye.svg" alt="Watch icon">
-                                <img src="./img/fork.svg" alt="Fork icon">
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button class="card card-6">
-                        <div class="color-pane"></div>
-                        <div class="card-cont card-6-content">
-                            <div class="card-wrtiting ard-6-writing">
-                                <h3>Recipes</h3>
-                                <p>This project aims to demonstrate my understanding of HTML structure and linking multiple web pages.</p>
+                        <button class="card card-6">
+                            <div class="color-pane"></div>
+                            <div class="card-cont card-6-content">
+                                <div class="card-wrtiting ard-6-writing">
+                                    <h3>Recipes</h3>
+                                    <p>This project aims to demonstrate my understanding of HTML structure and linking multiple web pages.</p>
+                                </div>
+                                <div class="card-footer card-6-footer">
+                                    <img src="./img/star.svg" alt="Star icon">
+                                    <img src="./img/eye.svg" alt="Watch icon">
+                                    <img src="./img/fork.svg" alt="Fork icon">
+                                </div>
                             </div>
-                            <div class="card-footer card-6-footer">
-                                <img src="./img/star.svg" alt="Star icon">
-                                <img src="./img/eye.svg" alt="Watch icon">
-                                <img src="./img/fork.svg" alt="Fork icon">
-                            </div>
-                        </div>
-                    </button>
-
+                        </button>
+                    </div>
                 </div>
 
                 <!--Announcements and Trending-->
