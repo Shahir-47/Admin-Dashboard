@@ -20,3 +20,22 @@ const headerHeightWithoutUnits = parseFloat(headerHeight);
 const newHeight = headerHeightWithoutUnits + 16; // Assuming 1 rem is equivalent to 16 pixels
 // Apply the new width as the padding-left for the main content
 document.querySelector('.main').style.paddingTop = `${newHeight}px`;
+
+
+
+const sidebarRight = window.getComputedStyle(sidebar).getPropertyValue('right');
+console.log(sidebarRight);
+const sidebarRightWithoutUnits = parseFloat(sidebarRight);
+const headerWidth = window.innerWidth - sidebarRightWithoutUnits;// Assuming 1 rem is equivalent to 16 pixels
+header.style.left = `${headerWidth}px`;
+// const getScrollbarWidth = () =>
+//   window.innerWidth - document.documentElement.clientWidth;
+
+// console.log(window.innerWidth);
+
+// const navWidth = window.outerWidth - sidebarWidthWithoutUnits - getScrollbarWidth();
+
+// console.log(navWidth);
+
+
+// document.querySelector('.header-1').style.width = `${navWidth}px`;
