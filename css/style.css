@@ -277,6 +277,11 @@ div.sticky-anc div.anc-tren .ann .ann-block {
     color: rgb(51, 51, 51);
 }
 
+.content .all-cards .card:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
 .card-writing h3{
     font-size: 2rem;
     color: black;
@@ -341,6 +346,18 @@ div.sticky-anc{
     padding-top: 16px;
 }
 
+.main .header .sticky-container .header-1 .user a {
+    text-decoration: none;
+}
+
+.main .header .sticky-container .header-1 .user a:hover {
+    text-decoration: underline;
+}
+
+.main .header .sticky-container .header-1 .user a:active {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
 
 
 div.sticky-anc .anc-tren {
