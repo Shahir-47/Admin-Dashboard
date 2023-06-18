@@ -1,42 +1,32 @@
-// Get the sidebar element
+//adjusting the width of the main content area to account for the width of the sidebar
 const sidebar = document.querySelector('.sidebar');
-// Get the computed width of the sidebar
 const sidebarWidth = window.getComputedStyle(sidebar).getPropertyValue('width');
-// Remove the units from the width
 const sidebarWidthWithoutUnits = parseFloat(sidebarWidth);
-// Add 1 rem to the sidebar width
-const newWidth = sidebarWidthWithoutUnits; // Assuming 1 rem is equivalent to 16 pixels
-// Apply the new width as the padding-left for the main content
+const newWidth = sidebarWidthWithoutUnits; 
 document.querySelector('.main').style.paddingLeft = `${newWidth}px`;
 
 
-// Get the sidebar element
+//adjusting the height of the main content area to account for the height of the header
 const header = document.querySelector('.header-1');
-// Get the computed width of the sidebar
 const headerHeight = window.getComputedStyle(header).getPropertyValue('height');
-// Remove the units from the width
 const headerHeightWithoutUnits = parseFloat(headerHeight);
-// Add 1 rem to the sidebar width
-const newHeight = headerHeightWithoutUnits + 16; // Assuming 1 rem is equivalent to 16 pixels
-// Apply the new width as the padding-left for the main content
+const newHeight = headerHeightWithoutUnits + 16; 
 document.querySelector('.main').style.paddingTop = `${newHeight}px`;
 
 
-
+//adjusting the width of the header to account for the width of the sidebar
 const sidebarRight = window.getComputedStyle(sidebar).getPropertyValue('right');
 console.log(sidebarRight);
 const sidebarRightWithoutUnits = parseFloat(sidebarRight);
-const headerWidth = window.innerWidth - sidebarRightWithoutUnits;// Assuming 1 rem is equivalent to 16 pixels
+const headerWidth = window.innerWidth - sidebarRightWithoutUnits;
 header.style.left = `${headerWidth}px`;
 
 
-
-// const project = document.querySelector('.projects');
-// // Get the computed width of the sidebar
-// const projectWidth = window.getComputedStyle(project).getPropertyValue('width');
-// // Remove the units from the width
-// const projectWidthWithoutUnits = parseFloat(projectWidth);
-// // Add 1 rem to the sidebar width
-// const ancLeft = projectWidthWithoutUnits + headerWidth + 16; // Assuming 1 rem is equivalent to 16 pixels
-// // Apply the new width as the padding-left for the main content
-// document.querySelector('.anc-tren').style.left = `${ancLeft}px`;
+//making the height of the right sidebar same as the height of the main content area
+const project = document.querySelector('.projects');
+const projectHeight = window.getComputedStyle(project).getPropertyValue('height');
+const projectHeightWithoutUnits = parseFloat(projectHeight);
+const newRightBar = projectHeightWithoutUnits + 18;
+document.querySelector('.sticky-anc').style.height = `${newRightBar}px`;
+document.querySelector('.sticky-anc').style.minHeight = `${newRightBar}px`;
+document.querySelector('.sticky-anc').style.maxHeight = `${newRightBar}px`;
