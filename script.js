@@ -28,14 +28,15 @@ console.log(sidebarRight);
 const sidebarRightWithoutUnits = parseFloat(sidebarRight);
 const headerWidth = window.innerWidth - sidebarRightWithoutUnits;// Assuming 1 rem is equivalent to 16 pixels
 header.style.left = `${headerWidth}px`;
-// const getScrollbarWidth = () =>
-//   window.innerWidth - document.documentElement.clientWidth;
-
-// console.log(window.innerWidth);
-
-// const navWidth = window.outerWidth - sidebarWidthWithoutUnits - getScrollbarWidth();
-
-// console.log(navWidth);
 
 
-// document.querySelector('.header-1').style.width = `${navWidth}px`;
+
+// const project = document.querySelector('.projects');
+// // Get the computed width of the sidebar
+// const projectWidth = window.getComputedStyle(project).getPropertyValue('width');
+// // Remove the units from the width
+// const projectWidthWithoutUnits = parseFloat(projectWidth);
+// // Add 1 rem to the sidebar width
+// const ancLeft = projectWidthWithoutUnits + headerWidth + 16; // Assuming 1 rem is equivalent to 16 pixels
+// // Apply the new width as the padding-left for the main content
+// document.querySelector('.anc-tren').style.left = `${ancLeft}px`;
